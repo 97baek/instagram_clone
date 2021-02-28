@@ -1,0 +1,242 @@
+html,
+body {
+  height: 100vh;
+}
+
+.login-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.login-main {
+  flex: 1 1 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(219, 219, 219, 1);
+  background: white;
+  width: 350px;
+  height: 380px;
+  min-width: 350px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.login-logo {
+  margin: 22px auto 12px;
+  width: 175px;
+  height: 51px;
+  text-align: center;
+  background-image: url(/img/logo.png);
+  background-size: 100%;
+  background-position: 0 57px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form .login-form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form .login-form-input .input-container {
+  position: relative;
+}
+
+.login-form .login-form-input .input-container span {
+  position: absolute;
+  margin: 0 40px 6px;
+  font-size: 0.75rem;
+  height: 36px;
+  line-height: 36px;
+  left: 8px;
+  right: 0;
+  color: #8e8e8e;
+  overflow: hidden;
+  pointer-events: none;
+  transition: 0.1s ease-out;
+}
+
+.login-form .login-form-input .input-container span.focus {
+  transform: translate(-21px, -10px) scale(0.833333);
+}
+
+.login-form .login-form-input .input-container .login {
+  width: 258px;
+  min-height: 18px;
+  margin: 0 40px 6px;
+  font-size: 1rem;
+  padding: 9px 0 7px 8px;
+  border: 1px solid rgba(219, 219, 219, 1);
+  background-color: rgba(250, 250, 250, 1);
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.login-form .login-form-input .input-container .login:focus {
+  outline: none;
+  border: 1px solid #a8a8a8;
+}
+
+.login-form .login-form-input .input-container .login.focus {
+  font-size: 0.75rem;
+  padding: 14px 0 2px 8px !important;
+}
+
+.login-form .btn {
+  margin: 8px 40px;
+}
+
+.login-form .btn-login {
+  background-color: rgba(0, 149, 246, 0.3);
+  color: white;
+  opacity: 1;
+  width: 270px;
+  padding: 5px 9px;
+  font-weight: 600;
+  display: block;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.login-form .btn-login.active {
+  background: #0095f6;
+}
+
+.login-form .or {
+  display: flex;
+  align-items: center;
+  margin: 10px 40px 18px;
+}
+
+.login-form .or .vertical {
+  background-color: #dbdbdb;
+  width: 103px;
+  height: 1px;
+}
+
+.login-form .or p {
+  color: #8e8e8e;
+  font-weight: 600;
+  font-size: 0.813rem;
+  margin: 0 18px;
+}
+
+.login-form .btn-facebook-login {
+  font-size: 0.875em;
+  font-weight: 600;
+  color: #385185;
+  background: white;
+  cursor: pointer;
+}
+
+.login-form .forget-passwd {
+  color: rgba(var(--fe0, 0, 55, 107), 1);
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.login-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 63px;
+  background-color: #fff;
+  border: 1px solid#dbdbdb;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  font-size: 0.875rem;
+}
+
+.login-signup a {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.download-app {
+  width: 350px;
+  height: 102px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-app p {
+  color: #262626;
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  font-size: 14px;
+  line-height: 18px;
+  margin: 10px 20px 10px 20px;
+  text-align: center;
+}
+
+.download-app .go-download {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+
+.download-app .go-download .app {
+  margin-right: 8px;
+}
+
+.download-app .go-download .app img {
+  height: 40px;
+}
+
+.login-footer {
+  flex: 1 1 20%;
+  color: #8e8e8e;
+  font-size: 0.75rem;
+}
+
+.login-footer .login-footer-top ul {
+  display: flex;
+  justify-content: center;
+}
+
+.login-footer .login-footer-top ul li {
+  margin: 0 8px 8px 12px;
+}
+
+.login-footer .login-footer-top ul li a {
+  color: #8e8e8e;
+}
+
+.login-footer .login-footer-bottom {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.login-footer .login-footer-bottom #language-select {
+  background: #dbdbdb;
+  border: none;
+  color: #8e8e8e;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.login-footer .login-footer-bottom p {
+  margin-left: 16px;
+}

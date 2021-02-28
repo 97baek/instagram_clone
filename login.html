@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-wrap">
+      <main class="login-main">
+        <section class="login-container">
+          <div class="login-logo"></div>
+          <form class="login-form">
+            <div class="login-form-input">
+              <div class="input-container">
+                <span class="input-top">전화번호, 사용자 이름 또는 이메일</span>
+                <input
+                  type="text"
+                  class="login input-id"
+                  name="username"
+                  data-key="id"
+                  aria-label="전화번호, 사용자 이름 또는 이메일"
+                />
+              </div>
+              <div class="input-container">
+                <span class="input-bottom"> 비밀번호 </span>
+                <input
+                  type="text"
+                  class="login input-passwd"
+                  name="userpassword"
+                  data-key="passwd"
+                  aria-label="비밀번호"
+                />
+              </div>
+              <button class="btn btn-login">로그인</button>
+              <div class="or">
+                <div class="vertical"></div>
+                <p>또는</p>
+                <div class="vertical"></div>
+              </div>
+              <div>
+                <button class="btn btn-facebook-login">
+                  <i class="fab fa-facebook-square"></i>
+                  Facebook으로 로그인
+                </button>
+              </div>
+            </div>
+            <a href="#" class="forget-passwd">비밀번호를 잊으셨나요?</a>
+          </form>
+        </section>
+        <section class="login-signup">
+          <p>계정이 없으신가요? <a href="#">가입하기</a></p>
+        </section>
+        <section class="download-app">
+          <p>앱을 다운로드하세요.</p>
+          <div class="go-download">
+            <a href="#" class="app appstore">
+              <img src="./img/appStore.png" alt="앱스토어" />
+            </a>
+            <a href="#" class="app google">
+              <img src="./img/googlePlay.png" alt="구글플레이" />
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer class="login-footer">
+        <div class="login-footer-top">
+          <ul>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">채용 정보</a></li>
+            <li><a href="#">도움말</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">약관</a></li>
+            <li><a href="#">인기 계정</a></li>
+            <li><a href="#">해시태그</a></li>
+            <li><a href="#">위치</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">뷰티</a></li>
+            <li><a href="#">댄스 및 공연</a></li>
+            <li><a href="#">피트니스</a></li>
+            <li><a href="#">식음료</a></li>
+            <li><a href="#">집 및 정원</a></li>
+            <li><a href="#">음악</a></li>
+            <li><a href="#">시각 예술</a></li>
+          </ul>
+        </div>
+        <div class="login-footer-bottom">
+          <select name="languages" id="language-select">
+            <option value="한국어">한국어</option>
+            <option value="English">English</option>
+          </select>
+          <p>© 2021 Instagram from 백상흔</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./src/login.js"></script>
+  </body>
+</html>
